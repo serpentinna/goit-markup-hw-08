@@ -79,5 +79,9 @@
 
     background-color: $accent-blue-color;
     border-radius: 2px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }

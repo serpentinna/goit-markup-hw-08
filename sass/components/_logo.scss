@@ -21,15 +21,16 @@
     color: $accent-blue-color;
   }
 
+  @media screen and (min-width: $tablet) {
+    margin-right: auto;
+  }
+
   &--for-footer {
     justify-content: center;
+    margin-right: 0;
 
     @media screen and (min-width: $desktop) {
       justify-content: flex-start;
     }
-  }
-
-  @media screen and (min-width: $tablet) {
-    margin-right: auto;
   }
 }
