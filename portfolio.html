@@ -18,46 +18,123 @@
   <body>
     <header class="header-section">
       <div class="container header-section__container">
-        <nav class="navigation">
-          <a href="/index.html" class="logo">
-            <span class="logo__first-word">Web</span>Studio</a
+        <a href="/index.html" class="logo">
+          <span class="logo__first-word">Web</span>Studio</a
+        >
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-open
+        >
+          <svg
+            width="24"
+            height="16"
+            aria-label="Переключатель мобильного меню"
           >
-          <ul class="navigation__list">
-            <li class="navigation__item list">
-              <a href="./index.html" class="link navigation__link">Студия</a>
-            </li>
-            <li class="navigation__item list">
-              <a
-                href="./portfolio.html"
-                class="link navigation__link navigation__link--current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item list">
-              <a href="./portfolio.html" class="link navigation__link"
-                >Контакты</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts-list">
-          <li class="contacts-list__item list">
-            <a href="mailto:" class="link contacts-list__link">
-              <svg class="contacts-list__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu is-open" id="menu" data-menu>
+          <button type="button" class="close-button--for-menu" data-menu-close>
+            <svg
+              class="close-button__icon"
+              width="
+18.67"
+              height="
+18.67"
             >
-          </li>
-          <li class="contacts-list__item list">
-            <a href="tel:+" class="link link contacts-list__link">
-              <svg class="contacts-list__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              +380961111111</a
-            >
-          </li>
-        </ul>
+              <use href="./images/symbol-defs.svg#icon-closewindow"></use>
+            </svg>
+          </button>
+          <div class="menu__tablet-and-desktop">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item list">
+                  <a
+                    href="./index.html"
+                    class="link navigation__link navigation__link--current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="navigation__item list">
+                  <a href="./portfolio.html" class="link navigation__link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="navigation__item list">
+                  <a href="./portfolio.html" class="link navigation__link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts-list">
+              <li class="contacts-list__item list">
+                <a href="mailto:" class="link contacts-list__link">
+                  <svg class="contacts-list__icon" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-list__item list">
+                <a
+                  href="tel:+"
+                  class="
+                    link
+                    contacts-list__link contacts-list__link--phone-number
+                  "
+                >
+                  <svg class="contacts-list__icon" width="10" height="16">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +380961111111</a
+                >
+              </li>
+            </ul>
+            <ul class="socials--full-words">
+              <li class="list socials--full-words__item">
+                <a
+                  class="socials--full-words link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="list socials--full-words__item">
+                <a
+                  class="socials--full-words link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="list socials--full-words__item">
+                <a
+                  class="socials--full-words link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="list socials--full-words__item">
+                <a
+                  class="socials--full-words link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
