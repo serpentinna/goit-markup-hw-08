@@ -1,0 +1,25 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/_mixins";
+@import "./utils/global.settings";
+
+@import "./components/logo";
+@import "./components/header";
+@import "./components/site-navigation";
+@import "./components/contacts";
+@import "./components/menu";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/registration.form";
+@import "./components/advantages";
+@import "./components/businessline";
+@import "./components/team";
+@import "./components/clients";
+
+@import "./components/portfolio.buttons-filter";
+@import "./components/portfolio";
+
+@import "./components/footer";
+@import "./components/address";
+@import "./components/social.links";
+@import "./components/subscription.form";

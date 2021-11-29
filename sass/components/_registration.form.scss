@@ -1,0 +1,119 @@
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-form__title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $titles-color;
+}
+
+.form-label {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-lable__title,
+.comment-lable__title {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+}
+
+.form-lable__input {
+  @extend %form-textcontainer;
+  height: 40px;
+  padding: 12px 42px;
+
+  .comment-lable:focus-within & {
+    border: 1px solid $accent-blue-color;
+  }
+}
+
+.comment-lable {
+  margin-bottom: 20px;
+}
+
+.comment-lable__comment {
+  @extend %form-textcontainer;
+  height: 120px;
+  padding: 12px 16px;
+
+  .comment-lable:focus-within & {
+    border: 1px solid $accent-blue-color;
+  }
+}
+
+.form-lable__icon {
+  display: flex;
+  position: absolute;
+  bottom: 25%;
+  left: 15px;
+  transform: translateY(25%);
+
+  width: 18px;
+  height: 18px;
+
+  fill: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-label:focus-within & {
+    fill: $accent-blue-color;
+  }
+}
+
+.agreement-lable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.agreement-lable__iconcheck {
+  display: flex;
+
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  fill: $titles-color;
+
+  &:hover {
+    fill: $accent-blue-color;
+  }
+
+  .agreement-lable__checkbox:checked + & {
+    background-image: url(..//images/icon-check.svg);
+    fill: transparent;
+  }
+}
+
+.agreement-lable__text {
+  display: flex;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.agreement-lable__link {
+  color: $accent-blue-color;
+}
+
+.submit-button {
+  @extend %button;
+  display: block;
+  padding: 10px 55px;
+}

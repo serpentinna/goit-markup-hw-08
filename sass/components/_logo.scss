@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+
+  &--white {
+    margin-bottom: 20px;
+    padding: 0;
+    margin-right: 0;
+
+    color: $accent-text-color;
+  }
+
+  &__first-word {
+    color: $accent-blue-color;
+  }
+
+  &--for-footer {
+    justify-content: center;
+
+    @media screen and (min-width: $desktop) {
+      justify-content: flex-start;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: auto;
+  }
+}

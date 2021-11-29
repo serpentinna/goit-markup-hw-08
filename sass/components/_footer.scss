@@ -1,0 +1,30 @@
+.footer {
+  background-color: $accent-background-color;
+}
+
+.footer__address-and-logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+.footer__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    align-items: baseline;
+  }
+}

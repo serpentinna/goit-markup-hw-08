@@ -1,0 +1,114 @@
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.contacts-list__item {
+  @media screen and (min-width: $tablet) {
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contacts-list__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
+}
+
+.contacts-list__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: $primary-text-color;
+  fill: currentColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-blue-color;
+    fill: $accent-blue-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 32px 0;
+  }
+}
+
+.contacts-list__link--phone-number {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+    font-size: 34px;
+    line-height: 1.18;
+    color: $accent-blue-color;
+  }
+}
+
+.socials--full-words {
+  display: flex;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.socials--full-words__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}
+
+.socials--full-words .link {
+  display: flex;
+  padding-right: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $accent-blue-color;
+}
