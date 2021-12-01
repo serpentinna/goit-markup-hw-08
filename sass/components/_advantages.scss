@@ -6,7 +6,7 @@
 }
 
 .advantages-section__item {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -51,6 +51,7 @@
 }
 .advantages-section__subtitle {
   margin-bottom: 10px;
+  text-align: center;
 
   font-weight: bold;
   font-size: 14px;

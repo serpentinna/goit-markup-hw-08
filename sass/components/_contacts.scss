@@ -1,3 +1,8 @@
+.menu__tablet-and-desktop__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts-list {
   display: flex;
   flex-direction: column;
@@ -82,7 +87,6 @@
 
 .contacts-list__link--phone-number {
   @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
     font-size: 34px;
     line-height: 1.18;
     color: $accent-blue-color;
@@ -91,6 +95,10 @@
 
 .socials--full-words {
   display: flex;
+
+  @media screen and (max-width: 410px) {
+    flex-wrap: wrap;
+  }
 
   @media screen and (min-width: $tablet) {
     display: none;

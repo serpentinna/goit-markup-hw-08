@@ -2,13 +2,13 @@
   background-color: $accent-background-color;
 }
 
-.footer__address-and-logo {
+.footer__contacts-and-logo {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
-    margin-right: 165px;
+    flex-direction: row;
   }
 
   @media screen and (min-width: $desktop) {
@@ -23,8 +23,20 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+.footer__logo-and-address {
+  margin-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
-    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
